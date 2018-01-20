@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical"
+		android:gravity="right"
+		android:id="@+id/mainLinearLayout1">
+
+		<LinearLayout
+			android:weightSum="4"
+			android:layout_weight="1"
+			style="@style/linear"
+			android:background="#FFFFFF">
+
+			<TextView
+				android:hint="0"
+				android:id="@+id/text"
+				android:textColor="#2556E2"
+				style="@style/textview"
+				android:textIsSelectable="true">
+
+			</TextView>
+
+			<TextView
+				android:id="@+id/text2"
+				android:textColor="#06AC37"
+				style="@style/textview">
+
+			</TextView>
+
+			<TextView
+				android:id="@+id/text3"
+				android:textColor="#2556E2"
+				style="@style/textview"
+				android:textIsSelectable="true">
+
+			</TextView>
+
+			<TextView
+				android:id="@+id/text4"
+				android:textColor="#9B0404"
+				style="@style/textview">
+
+			</TextView>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_weight="1.5"
+			android:padding="0dp"
+			android:weightSum="5"
+			style="@style/linear">
+
+			<LinearLayout
+				style="@style/linearLayout"
+				android:background="#373332"
+				android:padding="5dp">
+
+				<Button
+					android:id="@+id/buttonAbout"
+					style="@style/numButton"
+					android:layout_weight="1.2"
+					android:text="About Developer"
+					android:textSize="15sp"/>
+
+				<Button
+					android:id="@+id/zoomin"
+					android:text="🔍\n( + )"
+					android:textSize="15sp"
+					style="@style/numButton"
+					android:onClick="zoomIn"/>
+
+				<Button
+					android:id="@+id/zoomout"
+					android:text="🔍\n( - )"
+					android:textSize="15sp"
+					style="@style/numButton"
+					android:onClick="zoomOut"/>
+
+				<Button
+					android:id="@+id/buttonDel"
+					android:text="Del"
+					style="@style/numButton"
+					android:textColor="#089A30"/>
+
+				<Button
+					android:id="@+id/buttonC"
+					android:text="C"
+					style="@style/numButton"
+					android:textColor="#089A30"/>
+
+				<Button
+					android:id="@+id/buttonExit"
+					android:text="Exit"
+					style="@style/numButton"
+					android:textColor="#D91003"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/linearLayout">
+
+				<Button
+					android:id="@+id/button1"
+					android:text="1"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/button2"
+					android:text="2"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/button3"
+					android:text="3"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/buttonPlus"
+					android:text="+"
+					style="@style/numButton"
+					android:textColor="#04EDFB"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/linearLayout">
+
+				<Button
+					android:id="@+id/button4"
+					android:text="4"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/button5"
+					android:text="5"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/button6"
+					android:text="6"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/buttonMinus"
+					android:text="-"
+					style="@style/numButton"
+					android:textColor="#04EDFB"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/linearLayout">
+
+				<Button
+					android:id="@+id/button7"
+					style="@style/numButton"
+					android:text="7"/>
+
+				<Button
+					android:id="@+id/button8"
+					android:text="8"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/button9"
+					android:text="9"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/buttonx"
+					android:text="×"
+					style="@style/numButton"
+					android:textColor="#04EDFB"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/linearLayout">
+
+				<Button
+					android:id="@+id/buttonDot"
+					android:text="."
+					style="@style/numButton"
+					android:textColor="#FFFEFE"/>
+
+				<Button
+					android:id="@+id/button0"
+					android:text="0"
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/buttonEquals"
+					android:text="="
+					style="@style/numButton"/>
+
+				<Button
+					android:id="@+id/buttonDivide"
+					android:text="÷"
+					style="@style/numButton"
+					android:textColor="#04EDFB"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/addmob"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:layout_below="@id/mainLinearLayout1"
+				android:gravity="center"
+				android:background="#373332">
+				<com.google.android.gms.ads.AdView
+					android:id="@+id/adView"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_alignParentBottom="true"
+					ads:adSize="BANNER"
+					ads:adUnitId="@string/banner_id">
+				</com.google.android.gms.ads.AdView>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

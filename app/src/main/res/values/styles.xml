@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" 
+		parent="@android:style/Theme.Holo.Light">
+	</style>
+	
+	<style name="numButton">
+		<item name="android:textSize">30sp</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+		<item name="android:background">#373332</item>
+	    <item name="android:layout_height">match_parent</item>
+		<item name="android:textColor">#FFFFFF</item>			
+	</style>
+	<style name="linearLayout">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_height">0dp</item>
+		<item name="android:orientation">horizontal</item>	
+	</style>
+	<style name="textview">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:textColorHint">#6F6F6F</item>
+		<item name="android:background">#FFFFFF</item>
+		<item name="android:gravity">right</item>
+	</style>
+	<style name="linear">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:layout_height">0dp</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+</resources>

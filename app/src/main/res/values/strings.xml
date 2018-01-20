@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Basic Calculator</string>
+    <string name="banner_id">ca-app-pub-6830488664932459/3524641574</string>
+	<string name="name">"This Calculator is Developed by: 
+		Dr. Zubayer Ahmed 
+		Mymensingh Medical College (M42)
+		
+		Medical Officer 
+		Government of People\'s Republic of 
+		Bangladesh
+		
+		33rd Batch of Bangladesh Civil Service
+		(Health)</string>
+</resources>
